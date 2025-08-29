@@ -17,7 +17,7 @@ DAMPING = 0.92              # 0.85–0.96 (higher = smoother trails)
 BROWNIAN = 0.10             # random jitter (0–0.3)
 GRAVITY = 0.0              # subtle downward pull (0–0.5)
 MAX_SPEED = 8.0             # clamp velocity
-BOX_BOUNCE = 0.65           # energy retained on wall bounce
+BOX_BOUNCE = 0.99          # energy retained on wall bounce
 PARTICLE_ALPHA = 0.86       # opacity of particle overlay (0–1)
 DRAW_BOX = False             # show faint bounding box
 MIRROR = True               # selfie-style mirror
