@@ -269,14 +269,14 @@ try:
             cv2.rectangle(out, (LEFT, TOP), (RIGHT, BOTTOM), box_color, 1, cv2.LINE_AA)
 
         # FPS (optional small overlay)
-        now = time.time()
-        fps = 1.0 / max(1e-6, (now - prev))
-        prev = now
-        fps_hist.append(fps)
-        if len(fps_hist) > 30:
-            fps_hist.pop(0)
-        cv2.putText(out, f"{np.mean(fps_hist):.1f} FPS | particles: {N_PARTICLES}",
-                    (12, 28), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (230,230,230), 1, cv2.LINE_AA)
+        # now = time.time()
+        # fps = 1.0 / max(1e-6, (now - prev))
+        # prev = now
+        # fps_hist.append(fps)
+        # if len(fps_hist) > 30:
+        #     fps_hist.pop(0)
+        # cv2.putText(out, f"{np.mean(fps_hist):.1f} FPS | particles: {N_PARTICLES}",
+        #             (12, 28), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (230,230,230), 1, cv2.LINE_AA)
 
         cv2.imshow("Hand-controlled Sand Box", out)
         key = cv2.waitKey(1) & 0xFF
