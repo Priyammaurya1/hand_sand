@@ -7,18 +7,18 @@ import time
 # Tunables (you can tweak)
 # =========================
 CAM_INDEX = 0
-OUTPUT_WIDTH = 960          # resize camera feed to this width (height auto)
-N_PARTICLES = 22000         # raise/lower for performance/denser look
+OUTPUT_WIDTH = 860          # resize camera feed to this width (height auto)
+N_PARTICLES = 64000         # raise/lower for performance/denser look
 BOX_MARGIN = 150             # pixel margin from frame edges for the “glass box”
 PARTICLE_SIZE_PX = 1        # 1 = tiny dots (like your screenshots)
-FORCE_STRENGTH = -10000.0     # repulsion intensity
+FORCE_STRENGTH = -1000.0     # repulsion intensity
 FORCE_RADIUS = 200.0        # effective influence radius (pixels)
-DAMPING = 0.92              # 0.85–0.96 (higher = smoother trails)
+DAMPING = 0.96              # 0.85–0.96 (higher = smoother trails)
 BROWNIAN = 0.10             # random jitter (0–0.3)
 GRAVITY = 0.0              # subtle downward pull (0–0.5)
 MAX_SPEED = 8.0             # clamp velocity
-BOX_BOUNCE = 0.99          # energy retained on wall bounce
-PARTICLE_ALPHA = 0.86       # opacity of particle overlay (0–1)
+BOX_BOUNCE = 2          # energy retained on wall bounce
+PARTICLE_ALPHA = 1       # opacity of particle overlay (0–1)
 DRAW_BOX = False             # show faint bounding box
 MIRROR = True               # selfie-style mirror
 
